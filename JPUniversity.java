@@ -49,6 +49,7 @@ public class JPUniversity
        System.out.println("");
        System.out.println("Número de Estudiantes Favorecidos: " +estudiantesFavorecidos);
        
+       //fin main
     }
     
     public JPUniversity() {
@@ -67,4 +68,4 @@ public class JPUniversity
         return n;
     }
     
-}//fin class main
+}
