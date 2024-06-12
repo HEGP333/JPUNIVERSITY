@@ -38,7 +38,7 @@ public class JPUniversity
        ayuda5.rechazar();
        //contar el número de estudiantes favorecidos
        int estudiantesFavorecidos = university.contarEstudiantesFavorecidos(Estado.ENTREGADO);
-       //mostrar el resúmen de Ayudas
+       //mostrar un resúmen de Ayudas
        System.out.println("Resúmen de Ayudas:");
        System.out.println("Al Estudiante " +estudiante1.getNombre() +" se le Asignó la ayuda de " +ayuda1.getTipoAyuda() +". El estado de la ayuda es: " +ayuda1.getEstado());
        System.out.println("Al Estudiante " +estudiante2.getNombre() +" se le Asignó la ayuda de " +ayuda2.getTipoAyuda() +". El estado de la ayuda es: " +ayuda2.getEstado());
