@@ -6,13 +6,13 @@ import java.util.Date;
 public class Ayuda{
     //atributos
     private Estudiante estudiante;
-    private Date fechaAsignacion;
-    private Date fechaEntrega;
+    private Fecha fechaAsignacion;
+    private Fecha fechaEntrega;
     private Estado estado;
     private TipoAyuda tipoAyuda;
     
     //constructor
-    public Ayuda(Estudiante estudiante, Date fechaAsignacion, TipoAyuda tipoAyuda){
+    public Ayuda(Estudiante estudiante, Fecha fechaAsignacion, TipoAyuda tipoAyuda){
         this.estudiante = estudiante;
         this.tipoAyuda = tipoAyuda;
         this.fechaAsignacion = fechaAsignacion;
@@ -23,11 +23,11 @@ public class Ayuda{
         return estudiante;
     }
     
-    public Date getFechaAsignacion(){
+    public Fecha getFechaAsignacion(){
         return fechaAsignacion;
     }
     
-    public Date getFechaEntrega(){
+    public Fecha getFechaEntrega(){
         return fechaEntrega;
     }
     
@@ -43,11 +43,11 @@ public class Ayuda{
         this.estudiante = estudiante;
     }
     
-    public void setFechaAsignacion(Date fechaAsignacion){
+    public void setFechaAsignacion(Fecha fechaAsignacion){
         this.fechaAsignacion = fechaAsignacion;
     }
     
-    public void setFechaEntrega(Date fechaEntrega){
+    public void setFechaEntrega(Fecha fechaEntrega){
         this.fechaEntrega = fechaEntrega;
     }
     
@@ -62,7 +62,7 @@ public class Ayuda{
     //métodos
     public void entregar(){
         setEstado(Estado.ENTREGADO);
-        setFechaEntrega(new Date());
+        setFechaEntrega(new Fecha());
     }
     
     public void rechazar(){

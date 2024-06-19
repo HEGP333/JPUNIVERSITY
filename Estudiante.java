@@ -8,13 +8,13 @@ public class Estudiante{
     private String codigo;
     private String documento;
     private String nombre;
-    private Date fechaNacimiento;
+    private Fecha fechaNacimiento;
     private TipoDocumento tipoDocumento;
     private int estrato;
     private String email;
     
     //constructor
-    public Estudiante(String codigo, String documento, String nombre, Date fechaNacimiento, TipoDocumento tipoDocumento, int estrato, String email){
+    public Estudiante(String codigo, String documento, String nombre, Fecha fechaNacimiento, TipoDocumento tipoDocumento, int estrato, String email){
         this.codigo = codigo;
         this.documento = documento;
         this.nombre = nombre;
@@ -37,7 +37,7 @@ public class Estudiante{
         return nombre;
     }
     
-    public Date getFechaNacimiento(){
+    public Fecha getFechaNacimiento(){
         return fechaNacimiento;
     }
     
@@ -65,7 +65,7 @@ public class Estudiante{
         this.nombre = nombre;
     }
     
-    public void setFechaNacimiento(Date fechaNacimiento){
+    public void setFechaNacimiento(Fecha fechaNacimiento){
         this.fechaNacimiento = fechaNacimiento;
     }
     
